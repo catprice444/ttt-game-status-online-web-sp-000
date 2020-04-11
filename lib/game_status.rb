@@ -27,6 +27,6 @@ def won?(board)
   false
 end
 
-def full(board)
-  board.all do |full_board|
+def full?(board)
+  board.all? {|i| i == "X" || i == "O"}
   end
